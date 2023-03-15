@@ -122,9 +122,16 @@ function addToZero(nums) {
   }
 
 //Longest Word
-
-
-
+//Write a function, find_longest_word, that takes a list of words and returns the length of the longest one.
+function findLongestWord(words) {
+    let maxLength = 0;
+    for (let i = 0; i < words.length; i++) {
+      if (words[i].length > maxLength) {
+        maxLength = words[i].length;
+      }
+    }
+    return maxLength;
+  }
 
 
 
